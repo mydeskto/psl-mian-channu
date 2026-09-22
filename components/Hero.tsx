@@ -7,7 +7,7 @@ import { players } from '@/data/players';
 import { teams } from '@/data/teams';
 
 const slides = [
-  { eyebrow: 'The city. The passion. The league.', title: 'Mian Channu,\\nmeet your league.', text: 'Four teams. One trophy. Every over matters when PSL 4 comes to town.', type: 'season' },
+  { eyebrow: 'The city. The passion. The league.', title: 'Mian Channu,\\nmeet your league.', text: 'Four teams. One trophy. Every over matters when PSL comes to town.', type: 'season' },
   { eyebrow: 'Captain · Mian Channu Strikers', title: 'Built for the\\nbig moments.', text: 'Hamza Javed leads the home side with fearless intent and a bat made for the spotlight.', type: 'player', player: players[0] },
   { eyebrow: 'Owner · Chenab Challengers', title: 'A league powered\\nby the people.', text: 'Meet the local leaders backing the next generation of cricket in the region.', type: 'owner', owner: owners[1] }
 ];
@@ -24,7 +24,7 @@ export function Hero() {
       <div className="relative mx-auto flex w-full max-w-[430px] flex-col items-center justify-center">
         <div className="absolute h-[340px] w-[340px] rounded-full border border-white/20 sm:h-[410px] sm:w-[410px]"/><div className="absolute h-[285px] w-[285px] rounded-full border border-leaf/40 sm:h-[345px] sm:w-[345px]"/>
         <div className="relative grid h-[290px] w-[290px] place-items-center overflow-hidden rounded-[36%_64%_58%_42%/40%_42%_58%_60%] bg-white/10 backdrop-blur-sm sm:h-[360px] sm:w-[360px]">
-          {slide.type === 'season' ? <><img src="/logo.png" alt="PSL 4 Mian Channu logo" className="w-[235px] rounded-full sm:w-[275px]"/><span className="absolute bottom-7 rounded-full bg-brandGreen px-4 py-2 text-xs font-bold uppercase tracking-[.2em]">Starts 1st September</span></> : <><div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"/><img src="/logo.png" alt={slide.player?.name ?? slide.owner?.name ?? 'League representative'} className="w-[220px] rounded-full opacity-90 sm:w-[270px]"/></>}
+          {slide.type === 'season' ? <><img src="/logo.png" alt="PSL Mian Channu logo" className="w-[235px] rounded-full sm:w-[275px]"/><span className="absolute bottom-7 rounded-full bg-brandGreen px-4 py-2 text-xs font-bold uppercase tracking-[.2em]">Starts 1st September</span></> : <><div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"/><img src="/logo.png" alt={slide.player?.name ?? slide.owner?.name ?? 'League representative'} className="w-[220px] rounded-full opacity-90 sm:w-[270px]"/></>}
         </div>
         {slide.type !== 'season' && <div className="relative z-10 mt-4 rounded-xl border border-white/10 bg-navy/90 px-5 py-3 text-center shadow-lg backdrop-blur-sm"><p className="text-[10px] font-bold uppercase tracking-[.2em] text-leaf">{team?.shortName}</p><p className="display text-2xl font-bold uppercase leading-none">{slide.player?.name ?? slide.owner?.name}</p></div>}
       </div>
