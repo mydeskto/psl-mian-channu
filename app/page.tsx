@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { MatchdayRail } from '@/components/MatchdayRail';
+import { LeagueHub } from '@/components/LeagueHub';
 import { LiveMatch } from '@/components/LiveMatch';
 import { ScheduleSection } from '@/components/ScheduleSection';
 import { Standings } from '@/components/Standings';
@@ -10,5 +11,5 @@ import { Sponsors } from '@/components/Sponsors';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
-  return <><Navbar/><main><Hero/><MatchdayRail/><LiveMatch/><ScheduleSection compact/><Standings/><TeamsSection/><PlayersSection/><OwnersSection/><NewsSection/><Sponsors/></main><Footer/></>;
+  return <><Navbar/><main><Hero/><MatchdayRail/><LeagueHub/><LiveMatch/><ScheduleSection compact/><Standings/><TeamsSection/><PlayersSection/><OwnersSection/><NewsSection/><Sponsors/></main><Footer/></>;
 }
