@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { owners } from '@/data/owners';
 import { players } from '@/data/players';
 import { teams } from '@/data/teams';
+import { CricketOrbit } from './CricketOrbit';
 
 const slides = [
   { eyebrow: 'The city. The passion. The league.', title: 'Mian Channu,\\nmeet your league.', text: 'Four teams. One trophy. Every over matters when PSL 4 comes to town.', type: 'season' },
@@ -22,6 +23,7 @@ export function Hero() {
     <div className="section-shell relative grid min-h-[570px] items-center gap-10 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
       <div key={active} className="float-in max-w-xl"><p className="mb-5 text-xs font-bold uppercase tracking-[.28em] text-leaf">{slide.eyebrow}</p><h1 className="display whitespace-pre-line text-6xl font-black uppercase leading-[.86] tracking-[-.02em] sm:text-8xl">{slide.title}</h1><p className="mt-7 max-w-md text-base leading-7 text-blue-100/80">{slide.text}</p><div className="mt-9 flex flex-wrap gap-3"><Link href="/schedule" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-bold text-navy transition hover:bg-white">Explore fixtures <ArrowUpRight size={16}/></Link><Link href="/live" className="rounded-full border border-white/25 px-6 py-3 text-sm font-bold transition hover:border-leaf hover:text-leaf">Watch live</Link></div></div>
       <div className="relative mx-auto flex w-full max-w-[430px] items-center justify-center">
+        <CricketOrbit />
         <div className="absolute h-[340px] w-[340px] rounded-full border border-white/20 sm:h-[410px] sm:w-[410px]"/><div className="absolute h-[285px] w-[285px] rounded-full border border-leaf/40 sm:h-[345px] sm:w-[345px]"/>
         <div className="relative grid h-[290px] w-[290px] place-items-center overflow-hidden rounded-[36%_64%_58%_42%/40%_42%_58%_60%] bg-white/10 backdrop-blur-sm sm:h-[360px] sm:w-[360px]">
           {slide.type === 'season' ? <><img src="/logo.png" alt="PSL 4 Mian Channu logo" className="w-[235px] rounded-full sm:w-[275px]"/><span className="absolute bottom-7 rounded-full bg-brandGreen px-4 py-2 text-xs font-bold uppercase tracking-[.2em]">Starts 1st September</span></> : <><div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"/><img src="/logo.png" alt={slide.player?.name ?? slide.owner?.name ?? 'League representative'} className="w-[220px] rounded-full opacity-90 sm:w-[270px]"/><div className="absolute bottom-8 left-8"><p className="text-xs uppercase tracking-widest text-leaf">{team?.shortName}</p><p className="display text-3xl font-bold uppercase">{slide.player?.name ?? slide.owner?.name}</p></div></>}
