@@ -7,7 +7,7 @@ export function MatchdayRail() {
   const match = schedule.find((item) => item.status === 'live') ?? schedule[2];
   const home = teams.find((team) => team.id === match.teamAId)!;
   const away = teams.find((team) => team.id === match.teamBId)!;
-  return <section className="relative z-10 -mt-8 pb-3">
+  return <section className="relative z-10 mt-6 pb-3">
     <div className="section-shell">
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#081c38] text-white shadow-2xl shadow-navy/20">
         <div className="grid items-center lg:grid-cols-[1fr_1.7fr_1fr]">
