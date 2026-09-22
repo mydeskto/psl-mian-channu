@@ -16,12 +16,12 @@ export function MatchdayRail() {
             <p className="display text-2xl font-bold uppercase">Live from the ground</p>
             <p className="mt-1 text-xs text-white/45">Mian Channu Cricket Ground</p>
           </div>
-          <div className="flex items-center justify-center gap-5 p-5 sm:gap-10">
+          <div className="flex items-center justify-center gap-7 px-6 py-5 sm:gap-12 lg:px-8">
             <div className="text-center"><span className="team-mark mx-auto mb-2 h-12 w-12 text-xs" style={{ backgroundColor: home.primaryColor }}>{home.shortName}</span><p className="text-xs font-bold">{home.shortName}</p></div>
             <div className="text-center"><p className="display text-3xl font-black text-gold">126/2</p><p className="mt-1 text-[10px] uppercase tracking-widest text-white/40">8.2 overs · need 48</p></div>
             <div className="text-center"><span className="team-mark mx-auto mb-2 h-12 w-12 text-xs" style={{ backgroundColor: away.primaryColor }}>{away.shortName}</span><p className="text-xs font-bold">{away.shortName}</p></div>
           </div>
-          <div className="flex items-center justify-between gap-4 border-t border-white/10 p-5 lg:border-l lg:border-t-0"><div className="text-xs text-white/50"><p className="flex items-center gap-2"><CalendarDays size={13} className="text-leaf"/>{match.date} · {match.time}</p><p className="mt-2 flex items-center gap-2"><MapPin size={13} className="text-leaf"/>{match.venue}</p></div><Link href="/live" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold text-navy transition hover:bg-white" aria-label="Open live match centre"><ArrowUpRight size={17}/></Link></div>
+          <div className="flex items-center justify-between gap-7 border-t border-white/10 p-5 lg:border-l lg:border-t-0 lg:px-7"><div className="text-xs text-white/50"><p className="flex items-center gap-2"><CalendarDays size={13} className="text-leaf"/>{match.date} · {match.time}</p><p className="mt-2 flex items-center gap-2"><MapPin size={13} className="text-leaf"/>{match.venue}</p></div><Link href="/live" className="ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold text-navy transition hover:bg-white" aria-label="Open live match centre"><ArrowUpRight size={17}/></Link></div>
         </div>
       </div>
     </div>
