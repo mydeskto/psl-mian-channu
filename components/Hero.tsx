@@ -25,7 +25,7 @@ export function Hero() {
       <div className="relative mx-auto flex w-full max-w-[430px] items-center justify-center">
         <CricketOrbit />
         <div className="absolute h-[340px] w-[340px] rounded-full border border-white/20 sm:h-[410px] sm:w-[410px]"/><div className="absolute h-[285px] w-[285px] rounded-full border border-leaf/40 sm:h-[345px] sm:w-[345px]"/>
-        <div className="relative grid h-[290px] w-[290px] place-items-center overflow-hidden rounded-[36%_64%_58%_42%/40%_42%_58%_60%] bg-white/10 backdrop-blur-sm sm:h-[360px] sm:w-[360px]">
+        <div className="hero-logo-panel relative z-[5] grid h-[290px] w-[290px] place-items-center overflow-hidden rounded-[36%_64%_58%_42%/40%_42%_58%_60%] bg-white/10 backdrop-blur-sm sm:h-[360px] sm:w-[360px]">
           {slide.type === 'season' ? <><img src="/logo.png" alt="PSL 4 Mian Channu logo" className="w-[235px] rounded-full sm:w-[275px]"/><span className="absolute bottom-7 rounded-full bg-brandGreen px-4 py-2 text-xs font-bold uppercase tracking-[.2em]">Starts 1st September</span></> : <><div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"/><img src="/logo.png" alt={slide.player?.name ?? slide.owner?.name ?? 'League representative'} className="w-[220px] rounded-full opacity-90 sm:w-[270px]"/><div className="absolute bottom-8 left-8"><p className="text-xs uppercase tracking-widest text-leaf">{team?.shortName}</p><p className="display text-3xl font-bold uppercase">{slide.player?.name ?? slide.owner?.name}</p></div></>}
         </div>
       </div>
