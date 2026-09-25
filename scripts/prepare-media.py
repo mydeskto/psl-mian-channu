@@ -8,11 +8,11 @@ for folder in ['hero', 'owners', 'players', 'sponsors', 'teams']:
     (ROOT / folder).mkdir(parents=True, exist_ok=True)
 
 SRC = Path(r'C:\Users\HP\.cursor\projects\d-psl\assets\c__Users_HP_AppData_Roaming_Cursor_User_workspaceStorage_7c8f0fb22426ca533a3e7cd7dbe29596_images_ChatGPT_Image_Sep_23__2026__12_48_04_AM-79846ede-d74f-47af-8600-c0a30b03669c.jpg')
-shutil.copyfile(SRC, ROOT / 'hero' / 'memorial-banner.jpg')
+shutil.copyfile(SRC, ROOT / 'hero' / 'memorial-banner.png')
 
 im = Image.open(SRC)
 crops = {
-    'masood-awan': (8, 105, 175, 300),
+    'masood-awan': (8, 105, 175, 300),  
     'niaz-asif-nadeem': (165, 100, 335, 300),
     'naveed-awan': (320, 95, 490, 295),
     'khan-kashif': (475, 95, 645, 295),

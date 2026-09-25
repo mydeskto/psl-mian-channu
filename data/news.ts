@@ -6,7 +6,7 @@ export const news: NewsItem[] = [
     title: 'Malik Sher M. Awan Memorial lights up Mian Channu',
     summary: 'The memorial tournament opens with four franchises, hometown fans, and a full floodlight calendar.',
     date: '28 Aug 2025',
-    imageUrl: '/hero/memorial-banner.jpg',
+    imageUrl: '/hero/memorial-banner.png',
     category: 'League news',
   },
   {

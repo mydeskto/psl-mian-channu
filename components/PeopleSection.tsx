@@ -93,7 +93,7 @@ export function OwnersSection() {
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-            <img src="/hero/memorial-banner.jpg" alt="Malik Sher M. Awan Memorial banner" className="h-full w-full object-cover" />
+            <img src="/hero/memorial-banner.png" alt="Malik Sher M. Awan Memorial banner" className="h-full w-full object-cover" />
           </div>
         </div>
 
