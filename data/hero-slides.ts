@@ -42,14 +42,5 @@ export const heroSlides: HeroSlide[] = [
     imageUrl: '/hero/match-action.jpg',
     ctaPrimary: { label: 'Standings', href: '/#standings' },
     ctaSecondary: { label: 'Players', href: '/players' },
-  },
-  {
-    id: 'craft',
-    eyebrow: 'Grassroots to glory',
-    title: 'Bat in hand.\nEyes on glory.',
-    text: 'Built for next-gen district talent — the memorial tournament is where local names become local legends.',
-    imageUrl: '/hero/cricket-bat.jpg',
-    ctaPrimary: { label: 'Player spotlight', href: '/players' },
-    ctaSecondary: { label: 'Owners', href: '/#owners' },
-  },
+  }
 ];
