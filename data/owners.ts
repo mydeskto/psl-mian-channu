@@ -47,12 +47,5 @@ export const owners: Owner[] = [
     role: 'Team Patron',
     photoUrl: '/owners/raja-murtaza.jpg',
     bio: 'Energizing Tulamba cricket with fearless team spirit and youth development focus.',
-  },
-  {
-    id: 'owner-guest',
-    name: 'Memorial Guest of Honour',
-    role: 'Featured Guest',
-    photoUrl: '/owners/memorial-guest.jpg',
-    bio: 'Honoured guest of the Malik Sher M. Awan Memorial — standing with the league community.',
-  },
+  }
 ];
