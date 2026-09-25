@@ -14,14 +14,14 @@ export const owners: Owner[] = [
     teamId: 'mian-channu-strikers',
     name: 'Adv. Malik Masood Awan',
     role: 'Tournament Patron',
-    photoUrl: '/owners/masood-awan.jpg',
+    photoUrl: '/owners/masood-awan.jpeg',
     bio: 'Leading voice behind the Malik Sher M. Awan Memorial — driving cricket culture across Mian Channu.',
   },
   {
-    id: 'owner-niaz',
-    name: 'Niaz Asif Nadeem',
+    id: 'owner-mian',
+    name: 'Mian Asif Nadeem',
     role: 'Organizing Partner · with Liaqat Abbasi',
-    photoUrl: '/owners/niaz-asif-nadeem.jpg',
+    photoUrl: '/owners/Mian Asif Nadeem.jpeg',
     bio: 'Community organizer helping deliver a memorial tournament that puts local talent on the big stage.',
   },
   {
@@ -29,7 +29,7 @@ export const owners: Owner[] = [
     teamId: 'chenab-challengers',
     name: 'Adv. Malik Naveed Awan',
     role: 'League Patron',
-    photoUrl: '/owners/naveed-awan.jpg',
+    photoUrl: '/owners/Malik Naveed Awan.jpeg',
     bio: 'Advocate and sports patron committed to growing grassroots cricket in the Chenab region.',
   },
   {
