@@ -9,7 +9,7 @@ export function Hero() {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setActive((v) => (v + 1) % heroSlides.length), 6500);
+    const id = setInterval(() => setActive((v) => (v + 1) % heroSlides.length), 4000);
     return () => clearInterval(id);
   }, []);
 

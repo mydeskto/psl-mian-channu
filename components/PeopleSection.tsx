@@ -32,16 +32,20 @@ export function TeamsSection() {
   );
 }
 
-export function PlayersSection() {
+export function PlayersSection({ compact = false }: { compact?: boolean }) {
   return (
     <section id="players" className="section-space">
       <div className="section-shell">
         <SectionHeading eyebrow="The ones to watch" title="Player spotlight" action={{ label: 'View all players', href: '/players' }} />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {players.map((player) => {
+          {players.map((player, index) => {
             const team = teams.find((item) => item.id === player.teamId)!;
+            const hideOnSmall = compact && index >= 4;
             return (
-              <article key={player.id} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card">
+              <article
+                key={player.id}
+                className={`group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card${hideOnSmall ? ' max-md:hidden' : ''}`}
+              >
                 <div className="relative flex h-52 items-end justify-center overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
                   <div className="absolute inset-0 opacity-30" style={{ background: `radial-gradient(circle at 50% 10%, ${team.primaryColor}, transparent 62%)` }} />
                   <img

@@ -22,7 +22,7 @@ export default function Home() {
         <ScheduleSection compact />
         <Standings />
         <TeamsSection />
-        <PlayersSection />
+        <PlayersSection compact />
         <OwnersSection />
         <NewsSection />
         <Sponsors />
