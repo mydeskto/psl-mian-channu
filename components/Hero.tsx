@@ -29,13 +29,13 @@ export function Hero() {
         </div>
       ))}
 
-      <div className="section-shell relative z-10 flex min-h-[620px] flex-col justify-end pb-8 pt-[120px] sm:min-h-[680px] sm:pb-10 sm:pt-[110px]">
+      <div className="section-shell relative z-10 flex min-h-[620px] flex-col justify-end pb-8 pt-[125px] sm:min-h-[680px] sm:pb-10 sm:pt-[110px]">
         <div key={slide.id} className="float-in max-w-2xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-[.28em] text-gold">{slide.eyebrow}</p>
           <h1 className="display whitespace-pre-line text-5xl font-black uppercase leading-[.88] tracking-[-.02em] sm:text-7xl">
             {slide.title}
           </h1>
-          <p className="mt-5 max-w-lg text-base leading-7 text-blue-100/85">{slide.text}</p>
+          <p className="mt-2 max-w-lg text-base leading-5 text-blue-100/85">{slide.text}</p>
           {(slide.ctaPrimary || slide.ctaSecondary) && (
           <div className="mt-7 flex flex-wrap gap-3">
             {slide.ctaPrimary && (
