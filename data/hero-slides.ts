@@ -15,8 +15,6 @@ export const heroSlides: HeroSlide[] = [
     title: 'The league.\nThe city.\nThe tribute.',
     text: 'PSL Mian Channu returns under the Malik Sher M. Awan Memorial — four teams, one trophy, hometown cricket on a national stage.',
     imageUrl: '/hero/Mian Asif Nadeem.jpeg',
-    ctaPrimary: { label: 'Watch live', href: '/live' },
-    ctaSecondary: { label: 'Meet the teams', href: '/teams' },
   },
   {
     id: 'lights',
