@@ -32,7 +32,7 @@ export function Hero() {
       <div className="section-shell relative z-10 flex min-h-[620px] flex-col justify-end pb-8 pt-[100px] sm:min-h-[680px] sm:pb-10 sm:pt-[110px]">
         <div key={slide.id} className="float-in max-w-2xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-[.28em] text-gold">{slide.eyebrow}</p>
-          <h1 className="display whitespace-pre-line text-5xl font-black uppercase leading-[.88] tracking-[-.02em] sm:text-7xl">
+          <h1 className="display whitespace-pre-line text-4xl font-black uppercase leading-[.88] tracking-[-.02em] sm:text-7xl">
             {slide.title}
           </h1>
           <p className="mt-5 max-w-lg text-base leading-7 text-blue-100/85">{slide.text}</p>
