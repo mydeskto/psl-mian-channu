@@ -20,7 +20,7 @@ export const owners: Owner[] = [
   {
     id: 'owner-mian',
     name: 'Mian Asif Nadeem',
-    role: 'Organizing Partner · with Liaqat Abbasi',
+    role: 'Organizing Partner ',
     photoUrl: '/owners/Mian Asif Nadeem.jpeg',
     bio: 'Community organizer helping deliver a memorial tournament that puts local talent on the big stage.',
   },
