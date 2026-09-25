@@ -1,7 +1,58 @@
-export type Owner = { id: string; teamId: string; name: string; photoUrl: string; bio: string };
+export type Owner = {
+  id: string;
+  teamId?: string;
+  name: string;
+  role: string;
+  photoUrl: string;
+  bio: string;
+};
+
+/** Patrons & organizers featured on the Malik Sher M. Awan Memorial banner */
 export const owners: Owner[] = [
-  { id: 'owner-1', teamId: 'mian-channu-strikers', name: 'Rana Shahzad', photoUrl: '/logo.png', bio: 'A hometown cricket champion building a platform for Mian Channu talent.' },
-  { id: 'owner-2', teamId: 'chenab-challengers', name: 'Haji Imran', photoUrl: '/logo.png', bio: 'Community-first entrepreneur and lifelong supporter of grassroots cricket.' },
-  { id: 'owner-3', teamId: 'kabirwala-kings', name: 'Malik Usman', photoUrl: '/logo.png', bio: 'A proud Kabirwala sports patron with a sharp eye for young talent.' },
-  { id: 'owner-4', teamId: 'tulamba-titans', name: 'Chaudhry Waqas', photoUrl: '/logo.png', bio: 'Bringing fearless energy and competitive spirit to the league.' }
+  {
+    id: 'owner-masood',
+    teamId: 'mian-channu-strikers',
+    name: 'Adv. Malik Masood Awan',
+    role: 'Tournament Patron',
+    photoUrl: '/owners/masood-awan.jpg',
+    bio: 'Leading voice behind the Malik Sher M. Awan Memorial — driving cricket culture across Mian Channu.',
+  },
+  {
+    id: 'owner-niaz',
+    name: 'Niaz Asif Nadeem',
+    role: 'Organizing Partner · with Liaqat Abbasi',
+    photoUrl: '/owners/niaz-asif-nadeem.jpg',
+    bio: 'Community organizer helping deliver a memorial tournament that puts local talent on the big stage.',
+  },
+  {
+    id: 'owner-naveed',
+    teamId: 'chenab-challengers',
+    name: 'Adv. Malik Naveed Awan',
+    role: 'League Patron',
+    photoUrl: '/owners/naveed-awan.jpg',
+    bio: 'Advocate and sports patron committed to growing grassroots cricket in the Chenab region.',
+  },
+  {
+    id: 'owner-kashif',
+    teamId: 'kabirwala-kings',
+    name: 'Khan Kashif',
+    role: 'Franchise Backer',
+    photoUrl: '/owners/khan-kashif.jpg',
+    bio: 'Proud Kabirwala supporter investing in players, coaching, and match-day experience.',
+  },
+  {
+    id: 'owner-murtaza',
+    teamId: 'tulamba-titans',
+    name: 'Raja Murtaza',
+    role: 'Team Patron',
+    photoUrl: '/owners/raja-murtaza.jpg',
+    bio: 'Energizing Tulamba cricket with fearless team spirit and youth development focus.',
+  },
+  {
+    id: 'owner-guest',
+    name: 'Memorial Guest of Honour',
+    role: 'Featured Guest',
+    photoUrl: '/owners/memorial-guest.jpg',
+    bio: 'Honoured guest of the Malik Sher M. Awan Memorial — standing with the league community.',
+  },
 ];

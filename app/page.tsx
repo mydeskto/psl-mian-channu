@@ -11,5 +11,23 @@ import { Sponsors } from '@/components/Sponsors';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
-  return <><Navbar/><main><Hero/><MatchdayRail/><LeagueHub/><LiveMatch/><ScheduleSection compact/><Standings/><TeamsSection/><PlayersSection/><OwnersSection/><NewsSection/><Sponsors/></main><Footer/></>;
+  return (
+    <>
+      <Navbar overlay />
+      <main>
+        <Hero />
+        <MatchdayRail />
+        <LeagueHub />
+        <LiveMatch />
+        <ScheduleSection compact />
+        <Standings />
+        <TeamsSection />
+        <PlayersSection />
+        <OwnersSection />
+        <NewsSection />
+        <Sponsors />
+      </main>
+      <Footer />
+    </>
+  );
 }
